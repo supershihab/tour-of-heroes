@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiServiceService } from './api-service.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tour-of-heroes';
+  heroData: any;
+  constructor (private _apiService: ApiServiceService) {}
+
+  title = 'Tour of Heroes!';
+  name = 'Shihab Mahmud'
+
+  ngOnInit() {
+    this._apiService.getData().subscribe(res=>{
+      this.heroData = res;
+    })
+  }
 }

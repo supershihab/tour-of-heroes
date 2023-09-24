@@ -1,1 +1,117 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Bangers&display=swap');
+
+html {
+  font-family: 'Arimo', sans-serif;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: #7546AC;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hide {
+  display: none;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.btn {
+  padding: 12px 18px !important;
+  background-color: #ECB22E;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  background-color: #1F2229;
+  color: #ECB22E;
+}
+
+.mx-auto {
+  margin: 0 auto!important;
+}
+
+.btn-list {
+  padding: 10px 35px!important;
+  border-radius: 16px;
+  border: 1px solid transparent;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  text-align: center;
+  background-color: #018876;
+  color: white;
+  font-size: 17px;
+}
+
+.btn-list:hover {
+  background-color: #00685a;
+  cursor: pointer;
+}
+
+.list-header-text {
+  margin-top: 60px;
+  padding-left: 55px;
+  font-size: 18px;
+}
+
+.bangers {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1.5px;
+}
+
+.card {
+  width: 450px;
+  background-color: #1F2229;
+  color: white;
+  border-radius: 15px;
+  padding: 20px!important;
+  margin: 0 auto!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header {
+  margin-right: 10px!important;
+}
+
+.card-body-bio {
+  
+}
+
+.hero-name {
+  font-family: 'Bangers', cursive;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px!important;
+}
