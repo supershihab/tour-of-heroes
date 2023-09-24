@@ -9,6 +9,6 @@ export class ApiServiceService {
   constructor(private _http:HttpClient) { }
 
   getData () {
-    return this._http.get('https://akabab.github.io/superhero-api/api/id/1.json')
+    return this._http.get('https://akabab.github.io/superhero-api/api/all.json')
   }
 }

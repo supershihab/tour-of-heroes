@@ -106,7 +106,7 @@ ul {
 }
 
 .card-body-bio {
-  
+
 }
 
 .hero-name {
@@ -114,4 +114,13 @@ ul {
   font-size: 18px;
   letter-spacing: 1.5px;
   margin-bottom: 5px!important;
+}
+
+.list-item {
+  margin-right: 15px!important;
+  margin-bottom: 15px!important;
+}
+
+.flex-full {
+  justify-content: center;
 }

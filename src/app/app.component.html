@@ -8,7 +8,8 @@
   <app-heroes></app-heroes>
 </section>
 
-<section>
+<!-- single Card -->
+<!-- <section>
   <h2>Comic Book Characters</h2>
     <div class="card">
       <div class="card-header">
@@ -45,4 +46,45 @@
   
       </div>
     </div>
-</section>
+</section> -->
+
+<!-- Card Collection -->
+<ul class="flex flex-full">
+  <li *ngFor="let heroD of heroData" class="list-item">
+    <div class="card">
+      <div class="card-header">
+        <h6 class="hero-name">{{ heroD.name }}</h6>
+        <img src="{{ heroD.images.sm }}" alt="">
+      </div>
+  
+      <div class="card-body">
+        <div class="card-body-bio">
+          <h6>Bigography</h6>
+          <p>Full Name: {{ heroD.biography.fullName }}</p>
+          <p> Alter Egos: {{ heroD.biography.alterEgos }}</p>
+          <p>Aliases: {{ heroD.biography.aliases[0] }}</p>
+          <p>Alignments: {{ heroD.biography.alignment }}</p>
+        </div>
+  
+        <div class="card-body-power">
+          <h6>Power Stats</h6>
+          <p>Intelligence: {{ heroD.powerstats.intelligence }}</p>
+          <p>Strength: {{ heroD.powerstats.strength }}</p>
+          <p>Speed: {{ heroD.powerstats.speed }}</p>
+          <p>Durability: {{ heroD.powerstats.durability }}</p>
+          <p>Power: {{ heroD.powerstats.power }}</p>
+          <p>Combat: {{ heroD.powerstats.combat }}</p>
+        </div>
+  
+        <div class="card-body-appearance">
+          <h6>Appearance</h6>
+          <p>Gender: {{ heroD.appearance.gender }}</p>
+          <p>Race: {{ heroD.appearance.race }}</p>
+          <p>Height: {{ heroD.appearance.height[0] }}</p>
+          <p>Weight: {{ heroD.appearance.weight[1] }}</p>
+        </div>
+  
+      </div>
+    </div>
+  </li>
+</ul>
